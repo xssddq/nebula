@@ -30,6 +30,7 @@
     config/               #nginx配置示例  
     loginapp/             #登录系统  
     static/               #html、js、css
+    debug.py              
 ```
 
 #### 项目部署
@@ -37,7 +38,7 @@
 * mysql db初始化（db模块）， monodb日志数据生成（fakedata模块）
 * gulp打包界面模块
 * 部署nginx
-* 启动运营管理平台，配置风控决策
+* 启动运营管理平台python management/debug.py，配置风控决策
 * \malicious_prevent：go test
 
 ## TODO
