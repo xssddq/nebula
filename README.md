@@ -7,10 +7,8 @@
   账号被盗（Account Takeover）  
   内容欺诈（Content Abuse）  
 #### 系统架构
-  
-
-
-#### 系统组建
-
-
+  ![](image/system.png  )
+#### 系统组件
+  ![](image/componement.png  )
 #### 工作方式
+  ![](image/workflow.png  )
