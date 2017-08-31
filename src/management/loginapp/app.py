@@ -27,13 +27,6 @@ def BuildSampleDB():
 
 
 if __name__ == '__main__':
-#    app.config.update({
-#        'MAIL_SERVER': 'smtp.exmail.qq.com',
-#        'MAIL_PORT': 465,
-#        'MAIL_USE_SSL': True,
-#        'MAIL_USERNAME': 'op@numensec.com',
-#        'MAIL_PASSWORD': 'zhukedin2Z'})
-#    mail = Mail(app)
 
     AddLoginBluePrint(app)
     BuildSampleDB()
