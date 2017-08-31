@@ -64,15 +64,6 @@ def AddLoginBluePrint(app):
     app.config.from_pyfile(CONF_FILE)
     db.init_app(app)
     user_datastore = SQLAlchemyUserDatastore(db, User, Role, LoginLog)
-
-    # After 'Create app'
-    #app.config['MAIL_SERVER'] = 'smtp.exmail.qq.com'
-    #app.config['MAIL_PORT'] = 465
-    #app.config['MAIL_USE_SSL'] = True
-    #app.config['MAIL_USERNAME'] = 'op@numensec.com'
-    #app.config['MAIL_PASSWORD'] = 'zhukedin2Z'
-    #mail = Mail(app)
-
     app.config['SESSION_TYPE'] = 'redis'
     app.config['SESSION_REDIS'] = redis.Redis(host='127.0.0.1', port=6379, db=2)
     app.config['PERMANENT_SESSION_LIFETIME'] = 86400
